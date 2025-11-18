@@ -8,7 +8,6 @@ import pandas as pd
 from pathlib import Path
 
 BASE_URL = "https://storage.googleapis.com/osv-vulnerabilities/all.zip"
-
 def create_session():
     """Create configured HTTP session with connection pooling and retries."""
     session = requests.Session()

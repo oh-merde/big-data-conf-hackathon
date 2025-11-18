@@ -1,0 +1,3 @@
+data/chunks/**.json
+scripts/data/vector_store/**
+.env
