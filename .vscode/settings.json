@@ -1,0 +1,8 @@
+{
+  "editor.largeFileOptimizations": false,
+  "rainbow_csv.enabled": true,
+  "files.associations": {
+    "*.csv": "csv"
+  }
+}
+
