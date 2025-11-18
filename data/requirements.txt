@@ -1,0 +1,33 @@
+# Workshop Dependencies
+# Building Evaluation Harnesses for LLM Agents
+# Big Data Conference Europe 2025 
+
+
+# Core LLM and API
+cohere>=5.0.0
+wikipedia>=1.4.0
+
+# Text Processing
+langchain-text-splitters>=0.2.0
+
+# Data Science & Analysis
+numpy>=1.24.0
+pandas>=2.0.0
+
+# Visualization
+matplotlib>=3.7.0
+plotly>=5.14.0
+
+# Jupyter & Notebooks
+jupyter>=1.0.0
+ipykernel>=6.25.0
+
+# Dashboard
+streamlit>=1.28.0
+
+# Environment Management
+python-dotenv>=1.0.0
+
+# Optional but recommended
+notebook>=7.0.0
+
