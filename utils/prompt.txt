@@ -1,0 +1,16 @@
+
+Scan this Git repository for dependency configuration files (requirements.txt for Python, package.json for JavaScript, Gemfile for Ruby, etc.). 
+If no dependency files with version specifications are found, return: 
+    'We currently don't support repositories that don't mention the package versions'
+    
+For each package found, check against the OSV vulnerability database:
+1. If package name matches AND repository version equals vulnerable version:   
+    → Log ALERT with full OSV details (vulnerability ID, summary, severity)
+2. If package name matches AND repository version is LOWER than vulnerable version:   
+    → Log ALERT with full OSV details + note "Your version may be even more vulnerable"
+3. If package name matches AND repository version is HIGHER than vulnerable version:   
+    → Log ALERT with full OSV details + append "but should be ok now"
+4. If package name not found in OSV database:   
+    → No action (package is safe)
+5. After checking all packages, if no vulnerabilities were found at all:   
+    → Log "All good!"
